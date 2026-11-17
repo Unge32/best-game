@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Emberwarden — Defend the Last Lantern</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #05081a;
+    min-height: 100%;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: system-ui, sans-serif;
+  }
+  #wrap {
+    width: min(1280px, 100vw);
+  }
+  canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+    image-rendering: auto;
+    cursor: crosshair;
+    background: #0b1026;
+  }
+  #note {
+    color: #9aa5c8;
+    font-size: 12px;
+    text-align: center;
+    padding: 6px 0 10px;
+  }
+</style>
+</head>
+<body>
+  <div id="wrap">
+    <canvas id="game" width="1280" height="720"></canvas>
+    <div id="note">Emberwarden — a tower-defence game. Everything runs offline from these files.</div>
+  </div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
